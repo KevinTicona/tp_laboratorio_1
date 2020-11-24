@@ -1,4 +1,4 @@
-id,nombre,horasTrabajadas,sueldo
+id,nombre,horasTrabajas,sueldo
 1,Lou,120,10000
 2,Ulrike,180,25000
 3,Brade,325,20000
@@ -498,7 +498,6 @@ id,nombre,horasTrabajadas,sueldo
 497,Fredia,220,30000
 498,Gretchen,180,12000
 499,Bibbie,60,37000
-500,Warren,220,25000
 501,Gabi,220,30000
 502,Callie,220,50000
 503,Patton,60,15000
@@ -990,7 +989,6 @@ id,nombre,horasTrabajadas,sueldo
 989,Wandie,60,25000
 990,Chiarra,325,18000
 991,Zaccaria,88,33000
-992,Trenna,90,10000
 993,Angelia,60,50000
 994,Raquela,180,12000
 995,Maxi,325,18000
@@ -999,3 +997,5 @@ id,nombre,horasTrabajadas,sueldo
 998,Jaye,75,25000
 999,Tamarra,60,15000
 1000,Saleem,60,20000
+1001,oscar,15000,1500
+1002,Vanesa,30,560000

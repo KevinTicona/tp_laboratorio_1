@@ -151,35 +151,48 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1604687952 source:c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\controller.c
+1606186277 source:c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\controller.c
 	<stdio.h>
 	<stdlib.h>
+	<ctype.h>
 	"LinkedList.h"
 	"Employee.h"
+	"parser.h"
 
-1604687954 c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\linkedlist.h
+1606111015 c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\linkedlist.h
 
-1604687952 c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\employee.h
+1606181046 c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\employee.h
 
-1604724770 source:c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\employee.c
+1606184787 source:c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1606161521 c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\controller.h
+
+1606185940 source:c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Controller.h"
 	"Employee.h"
 
-1604687952 c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\controller.h
-
-1604687954 source:c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\main.c
-	<stdio.h>
-	<stdlib.h>
-	"LinkedList.h"
-	"Controller.h"
-	"Employee.h"
-
-1604687954 source:c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\parser.c
+1606180959 source:c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
+	"parser.h"
+
+1606179290 source:c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1604687954 c:\users\keni_\desktop\tpskevinticona\tp3kevinticona\parser.h
 

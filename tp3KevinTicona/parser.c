@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 #include "Employee.h"
+#include "parser.h"
 
 /** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
  *
@@ -12,43 +13,38 @@
  */
 int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
 {
-    int cantidadDatosLeidos;
+    int retorno = -1;
+    Employee* this;
     char id[50];
     char nombre[50];
     char horasTrabajadas[50];
     char sueldo[50];
 
-    if (pFile == NULL || pArrayListEmployee == NULL)
-    {
-        return -1;
-    }
+	if(pFile != NULL && pArrayListEmployee)
+	{
+		retorno = 0;
+		fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",id,nombre,horasTrabajadas,sueldo);
+		do
+		{
+			if(fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",id,nombre,horasTrabajadas,sueldo) == 4)
+			{
+				this = employee_new();
 
-    // Forzamos lectura de la primer linea del archivo ya que esta contiene los encabezados
-    fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",id,nombre,horasTrabajadas,sueldo);
+				if(this != NULL &&
+				   !employee_setIdStr(this,id) &&
+				   !employee_setNombre(this,nombre) &&
+				   !employee_setHorasTrabajadasStr(this,horasTrabajadas) &&
+				   !employee_setSueldoStr(this,sueldo))
+				{
 
-    do
-    {
-        cantidadDatosLeidos = fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", id, nombre, horasTrabajadas, sueldo);
+					ll_add(pArrayListEmployee,this);
+				}
+			}
 
-        if (cantidadDatosLeidos == 4)
-        {
-            Employee* newEmployee = employee_newParametros(id,nombre,horasTrabajadas,sueldo);
+		}while(!feof(pFile));
+	}
 
-            if (newEmployee != NULL)
-            {
-                // no me toma los linkedlist.a
-                ll_add(pArrayListEmployee, newEmployee);
-            }
-        }
-        else
-        {
-            printf("\nHubo un problema al leer los datos de una linea del archivo. La misma sera ignorada\n");
-        }
-
-    }
-    while (!feof(pFile));
-
-    return 0;
+    return retorno;
 }
 
 
@@ -61,22 +57,29 @@ int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
  */
 int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 {
-    if (pFile == NULL || pArrayListEmployee == NULL)
-    {
-        return -1;
-    }
+	int retorno = -1;
 
-    Employee* empleadoTemporal;
+	Employee* this;
 
-    while (!feof(pFile))
-    {
-        empleadoTemporal = (Employee*)malloc(sizeof(Employee));
+	if(pFile != NULL && pArrayListEmployee != NULL)
+	{
+		do
+		{
+			this = employee_new();
+			if(this != NULL)
+			{
+				if(fread(this,sizeof(Employee),1,pFile))
+				{
+					ll_add(pArrayListEmployee,this);
+				}else
+				{
+					employee_delete(this);
+				}
+			}
+		}while(!feof(pFile));
 
-        if (fread(empleadoTemporal, sizeof(Employee), 1, pFile) == 1)
-        {
-            ll_add(pArrayListEmployee, empleadoTemporal);
-        }
-    }
+		retorno = 0;
+	}
 
-    return 0;
+    return retorno;
 }
