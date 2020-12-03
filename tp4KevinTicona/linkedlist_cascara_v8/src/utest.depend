@@ -4913,3 +4913,312 @@
 
 1606461720 c:\users\keni_\desktop\linkedlist_cascara_v8\inc\controller.h
 
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\addnodetest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\utest.h
+
+1606467050 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\inc\linkedlist.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\employee.h
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\addtest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\cleartest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\clonetest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\containsalltest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\containstest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\deletelinkedlisttest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\getnodetest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\gettest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\indexoftest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\isemptytest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\lentest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560541120 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\main_test.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	"../inc/newTest.h"
+	"../inc/addTest.h"
+	"../inc/getNodeTest.h"
+	"../inc/addNodeTest.h"
+	"../inc/deleteLinkedListTest.h"
+	"../inc/lenTest.h"
+	"../inc/getTest.h"
+	"../inc/containsTest.h"
+	"../inc/setTest.h"
+	"../inc/removeTest.h"
+	"../inc/clearTest.h"
+	"../inc/cloneTest.h"
+	"../inc/pushTest.h"
+	"../inc/indexOfTest.h"
+	"../inc/isEmptyTest.h"
+	"../inc/popTest.h"
+	"../inc/subListTest.h"
+	"../inc/containsAllTest.h"
+	"../inc/sortTest.h"
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\newtest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\addtest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\getnodetest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\addnodetest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\deletelinkedlisttest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\lentest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\gettest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\containstest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\settest.h
+
+1560541120 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\removetest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\cleartest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\clonetest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\pushtest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\indexoftest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\isemptytest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\poptest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\sublisttest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\containsalltest.h
+
+1560475730 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\inc\sorttest.h
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\newtest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\poptest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\pushtest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560541169 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\removetest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\settest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\sorttest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\src\sublisttest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560475730 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\testing\utest.c
+	"utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1607011392 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\src\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/LinkedList.h"
+	"../inc/clientes.h"
+	"../inc/validaciones.h"
+
+1606499194 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\inc\clientes.h
+
+1606511419 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\inc\validaciones.h
+
+1607028285 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\src\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"../inc/controller.h"
+	"../inc/LinkedList.h"
+	"../inc/parser.h"
+	"../inc/notebooks.h"
+	"../inc/clientes.h"
+	"../inc/validaciones.h"
+
+1607028818 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\inc\controller.h
+	"../inc/LinkedList.h"
+
+1606505270 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\inc\parser.h
+
+1607028745 c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\inc\notebooks.h
+	"../inc/clientes.h"
+
+1606491673 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\src\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/LinkedList.h"
+
+1607029853 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\src\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"../inc/controller.h"
+	"../inc/LinkedList.h"
+	"../inc/parser.h"
+	"../inc/notebooks.h"
+	"../inc/clientes.h"
+	"../inc/validaciones.h"
+
+1607028705 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\src\notebooks.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/LinkedList.h"
+	"../inc/parser.h"
+	"../inc/notebooks.h"
+	"../inc/clientes.h"
+	"../inc/validaciones.h"
+
+1607029997 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\src\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"../inc/LinkedList.h"
+	"../inc/parser.h"
+	"../inc/notebooks.h"
+	"../inc/clientes.h"
+
+1606510995 source:c:\users\keni_\desktop\tpskevinticona\tp4kevinticona\linkedlist_cascara_v8\src\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"../inc/validaciones.h"
+	"../inc/LinkedList.h"
+	"../inc/clientes.h"
+	"../inc/notebooks.h"
+

@@ -10,7 +10,7 @@ int parser_notebooksFromText(FILE* pFile, LinkedList* pLinkedListNotebooks)
 {
     int amountOfDataRead;
     char id[50];
-    char modelo[50];
+    char marca[50];
     char tipo[50];
     char precio[50];
     char idCliente[50];
@@ -21,7 +21,7 @@ int parser_notebooksFromText(FILE* pFile, LinkedList* pLinkedListNotebooks)
     }
 
     // Forzamos lectura de la primer linea del archivo ya que esta contiene los encabezados
-    fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^\n]\n",id,modelo,tipo,precio,idCliente);
+    fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^\n]\n",id,marca,tipo,precio,idCliente);
 
     do
     {
@@ -29,7 +29,7 @@ int parser_notebooksFromText(FILE* pFile, LinkedList* pLinkedListNotebooks)
                                   pFile,
                                   "%[^,],%[^,],%[^,],%[^,],%[^\n]\n",
                                   id,
-                                  modelo,
+                                  marca,
                                   tipo,
                                   precio,
                                   idCliente
@@ -37,7 +37,7 @@ int parser_notebooksFromText(FILE* pFile, LinkedList* pLinkedListNotebooks)
 
         if (amountOfDataRead == 5)
         {
-            eNotebook* newNotebook = note_newParams(id,modelo,tipo,precio,idCliente);
+            eNotebook* newNotebook = note_newParams(id,marca,tipo,precio,idCliente);
 
             if (newNotebook != NULL)
             {

@@ -168,7 +168,7 @@ int notebooks_setIdCliente(eNotebook* this,int idCliente)
     return error;
 }
 
-int notebooks_getIdDuenio(eNotebook* this,int* idCliente)
+int notebooks_getIdCliente(eNotebook* this,int* idCliente)
 {
     int error = -1;
 
@@ -478,6 +478,36 @@ void menu_modificaciones()
     printf("\n\n");
 }
 
+void menu_DeOrdenamiento()
+{
+    system("cls");
+    printf("                            Tipos de Ordenamientos                    \n");
+    printf("------------------------------------------------------------------------------------\n");
+    printf("1. Ordenar Notebooks por Nombre.\n");
+    printf("2. Ordenar Notebooks por Id.\n");
+    printf("3. Ordenar Notebooks por Tipo.\n");
+    printf("4. Volver al menu principal.\n");
+}
+void menu_DeFiltrado()
+{
+    system("cls");
+    printf("                            Tipos de Filtrado                    \n");
+    printf("------------------------------------------------------------------------------------\n");
+    printf("1. Filtrar Economica.\n");
+    printf("2. Filtrar Normal.\n");
+    printf("3. Filtrar Gamer.\n");
+    printf("5. Volver al menu principal.\n");
+}
+
+void menu_sublist()
+{
+    system("cls");
+    printf("                            SubList                    \n");
+    printf("------------------------------------------------------------------------------------\n");
+    printf("1. Revisar si la lista de Notebooks esta contenida en la lista de Notebooks principal.\n");
+    printf("2. Revisar si la lista de Clientes esta contenida en la lista de Notebooks.\n");
+    printf("3. Volver al menu principal.\n");
+}
 void menu_confirmacion(char* pConfirm)
 {
     char confirmacion[50];
@@ -497,3 +527,166 @@ void menu_confirmacion(char* pConfirm)
     strcpy(pConfirm, confirmacion);
 }
 
+int notebook_SortByName(void* notebookA, void* notebookB)
+{
+    int retorno = 0;
+    eNotebook* noteA;
+    eNotebook* noteB;
+
+    if(notebookA != NULL && notebookB != NULL)
+    {
+        noteA = notebookA;
+        noteB = notebookB;
+
+        retorno = strcmp(noteA->marca, noteB->marca);
+    }
+
+    return retorno;
+}
+
+int notebook_SortByTipo(void* notebookA, void* notebookB)
+{
+    int retorno = 0;
+    eNotebook* tipoA;
+    eNotebook* tipoB;
+
+    if(notebookA != NULL && notebookB != NULL)
+    {
+        tipoA = notebookA;
+        tipoB = notebookB;
+
+        retorno = strcmp(tipoA->tipo, tipoB->tipo);
+    }
+
+    return retorno;
+}
+
+int notebook_SortById(void* notebookA, void* notebookB)
+{
+    int retorno = 0;
+    int idA;
+    int idB;
+
+    if(notebookA != NULL && notebookB != NULL)
+    {
+        if(
+            !notebooks_getId((eNotebook*)notebookA, &idA) &&
+            !notebooks_getId((eNotebook*)notebookB, &idB)
+        )
+        {
+            if(idA > idB)
+            {
+                retorno = 1;
+            }
+            else
+            {
+                retorno = -1;
+            }
+        }
+
+    }
+
+    return retorno;
+}
+
+void notebooks_enterMarca(char* marcaValida)
+{
+    char marca[100];
+    int marcaValidada;
+
+    printf("\nIngrese la marca: ");
+    fflush(stdin);
+    gets(marca);
+    marcaValidada = validations_isValidName(marca);
+    while(marcaValidada != 1)
+    {
+        printf("\nDato invalido. Ingrese la marca: ");
+        fflush(stdin);
+        gets(marca);
+        marcaValidada = validations_isValidName(marca);
+    }
+    validations_formatStr(marca);
+    strcpy(marcaValida,marca);
+}
+
+void notebooks_enterTipo(char* tipoValidado)
+{
+    char tipo[100];
+    int tipoValido;
+
+    printf("\nIngrese tipo: ");
+    fflush(stdin);
+    gets(tipo);
+    tipoValido = validations_isValidType(tipo);
+    while(tipoValido != 1)
+    {
+        printf("\nDato invalido. Ingrese tipo: ");
+        fflush(stdin);
+        gets(tipo);
+        tipoValido = validations_isValidType(tipo);
+    }
+    strcpy(tipoValidado,tipo);
+}
+
+void notebooks_enterPrecio(char* precioValidado)
+{
+    char precio[50];
+    int precioValido;
+
+    printf("\nIngrese el precio: ");
+    fflush(stdin);
+    gets(precio);
+    precioValido = validations_isValidPrecio(precio);
+    while(precioValido != 1)
+    {
+        printf("\nDato invalido. Ingrese el precio: ");
+        fflush(stdin);
+        gets(precio);
+        precioValido = validations_isValidPrecio(precio);
+    }
+    strcpy(precioValidado,precio);
+}
+
+void notebooks_enterIdCliente(char* idClienteValidado)
+{
+    char idCliente[50];
+    int idClienteValido;
+
+    printf("\n\nIngrese el Id del Cliente: ");
+    fflush(stdin);
+    gets(idCliente);
+    idClienteValido = validations_isValidIdCliente(idCliente);
+    while(idClienteValido != 1)
+    {
+        printf("\nDato invalido. Ingrese el Id del Cliente: ");
+        fflush(stdin);
+        gets(idCliente);
+        idClienteValido = validations_isValidIdCliente(idCliente);
+    }
+    strcpy(idClienteValidado,idCliente);
+}
+
+void menu_main()
+{
+    system("cls");
+    printf("                                 **** Notebooks ****                   \n");
+    printf("__________________________________________________________________________________\n");
+    printf("1. Cargar los datos de las notebooks desde el archivo data.csv (modo texto).\n");
+    printf("2. Cargar los datos de las notebooks desde el archivo data.bin (modo binario).\n");
+    printf("3. Alta de notebook.\n");
+    printf("4. Modificar datos de notebook.\n");
+    printf("5. Baja de notebook.\n");
+    printf("6. Baja de notebook con pop.\n");
+    printf("7. Listar notebooks.\n");
+    printf("8. Listar Clientes.\n");
+    printf("9. Ordenar notebooks.\n");
+    printf("10. Filtrar notebooks por tipo.\n");
+    printf("11. Clonar notebooks.\n");
+    printf("12. Revisar si una notebook o una lista esta contenida en la lista de notebooks.\n");
+    printf("13. Generar sublista de notebooks.\n");
+    printf("14. Setear una notebook nueva en un indice de la lista de notebooks.\n");
+    printf("15. Hacer un push de una notebook nueva en un indice de la lista de notebooks.\n");
+    printf("16. Guardar los datos de las notebooks en el archivo data.csv (modo texto).\n");
+    printf("17. Guardar los datos de las notebooks en el archivo data.bin (modo binario)..\n");
+    printf("18. Salir.\n");
+}

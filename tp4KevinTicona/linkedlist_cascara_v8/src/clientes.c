@@ -41,7 +41,7 @@ eCliente* cliente_newParams(char* id, char* nombre, char* sexo)
                 !cliente_setSexo(newCliente,sexo)
             ))
         {
-            printf("\nOcurrio un problema al inicializar las propiedades del nuevo Duenio. El mismo no sera creado.\n");
+            printf("\nOcurrio un problema al inicializar las propiedades del nuevo Cliente. El mismo no sera creado.\n");
             newCliente = NULL;
             free(newCliente);
         }
