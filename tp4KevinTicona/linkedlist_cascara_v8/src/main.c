@@ -127,7 +127,7 @@ int main(void)
             case 3:
                 if(!controller_addNotebook(listNotebook, listCliente))
                 {
-                    printf("\Notebook agregada con exito, total de Notebooks: %d\n", ll_len(listNotebook));
+                    printf("\nNotebook agregada con exito, total de Notebooks: %d\n", ll_len(listNotebook));
                 }
                 else
                 {
